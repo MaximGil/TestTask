@@ -11,5 +11,5 @@ public abstract class BasePage
         Page = page;
     }
 
-    public virtual async Task Goto(string url = "https://qainterview.pythonanywhere.com/" ) => await Page.GotoAsync(url);
+    public async Task Goto(string url) => await Page.GotoAsync(url);
 }
